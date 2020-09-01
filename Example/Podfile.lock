@@ -1,0 +1,23 @@
+PODS:
+  - CTMediator (44)
+  - MMDHomeCategory (0.1.0):
+    - CTMediator
+
+DEPENDENCIES:
+  - MMDHomeCategory (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  MMDHomeCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
+  MMDHomeCategory: 97aad90f9c7d2191d37dd9d619aeba5fe7c35e22
+
+PODFILE CHECKSUM: 8f25ec23a9e78d60c9cfea288ec82b711fde8928
+
+COCOAPODS: 1.9.1

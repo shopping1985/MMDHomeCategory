@@ -1,0 +1,27 @@
+{
+  "name": "MMDHomeCategory",
+  "version": "0.1.0",
+  "summary": "A short description of MMDHomeCategory.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shopping1985/MMDHomeCategory",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shopping1985": "285624489@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/shopping1985/MMDHomeCategory.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MMDHomeCategory/Classes/*",
+  "dependencies": {
+    "CTMediator": [
+
+    ]
+  }
+}

@@ -62,11 +62,11 @@
 		67339DC8BDA0A05EB02727F2 /* Pods-MMDHomeCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDHomeCategory_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MMDHomeCategory_Tests/Pods-MMDHomeCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73A75A773E041F8E9229419D /* Pods-MMDHomeCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDHomeCategory_Example.debug.xcconfig"; path = "Target Support Files/Pods-MMDHomeCategory_Example/Pods-MMDHomeCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		83A7AB16262BF7CA17B2B558 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		83A7AB16262BF7CA17B2B558 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEC931DD63D877A97F2FD92F /* Pods_MMDHomeCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDHomeCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6881D7BCEC8E4C0B784F209 /* MMDHomeCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MMDHomeCategory.podspec; path = ../MMDHomeCategory.podspec; sourceTree = "<group>"; };
-		EB9E57C896AAB71688CF7A4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6881D7BCEC8E4C0B784F209 /* MMDHomeCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MMDHomeCategory.podspec; path = ../MMDHomeCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EB9E57C896AAB71688CF7A4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				67339DC8BDA0A05EB02727F2 /* Pods-MMDHomeCategory_Tests.debug.xcconfig */,
 				16D9B9FCB611469BF17B3EAF /* Pods-MMDHomeCategory_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = shopping1985;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2BX5796643;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +349,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MMDHomeCategory_Example/Pods-MMDHomeCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDHomeCategory/MMDHomeCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDHomeCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +499,7 @@
 			baseConfigurationReference = 73A75A773E041F8E9229419D /* Pods-MMDHomeCategory_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BX5796643;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMDHomeCategory/MMDHomeCategory-Prefix.pch";
 				INFOPLIST_FILE = "MMDHomeCategory/MMDHomeCategory-Info.plist";
@@ -510,6 +516,7 @@
 			baseConfigurationReference = 27DF1752083E4C285BE8DA8F /* Pods-MMDHomeCategory_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BX5796643;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMDHomeCategory/MMDHomeCategory-Prefix.pch";
 				INFOPLIST_FILE = "MMDHomeCategory/MMDHomeCategory-Info.plist";
